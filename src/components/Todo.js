@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 
 const Todo = ({text, todo, todos, setTodos}) => {
 
-    const [todoText, setTodoText] = useState(text);
 
     const deleteHandler = () => {
         setTodos(todos.filter((el) => el.id !== todo.id))
@@ -21,9 +20,7 @@ const Todo = ({text, todo, todos, setTodos}) => {
     }
     const inputChanged = (e) => {
         console.log(e.target.value);
-        //setTodoText(e.target.value);
-
-
+        
         setTodos(todos.map((item) => {
             if (item.id === todo.id) {
                 return {...item, text: e.target.value}
@@ -51,7 +48,7 @@ const Todo = ({text, todo, todos, setTodos}) => {
         <div className="todo">
             <input
                 className={`todo-item ${todo.completed ? "completed" : ""}`}
-                name="fname"
+                name="todoItem"
                 type="text"
                 value={todo.text}
                 onChange={inputChanged}
@@ -62,12 +59,12 @@ const Todo = ({text, todo, todos, setTodos}) => {
         </div>
     );
 
-    // 'todo-item' == string
-    // "todo-item" == string
-    // {some js} e.g.
+    // className='todo-item' == class name as a string
+    // className="todo-item" == string, same as above
+    // className={some js} -> uses Javascript code to set the class name
     // `` == template string -> evaluate stuff inside the `` to get the actual string
     // `${myname}` -> will evaluate myname and convert it into a string
-    // var myname = "Sam"
+    // let myname = "Sam"
     // `Hello ${myname}` ==> "Hello Sam"
     // Tertiary statement == question ? true : false
     // isValid ? "yes" : "no"

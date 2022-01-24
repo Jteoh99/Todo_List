@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(120deg, red 0%, orange 17%, yellow 34%, lime 50%, cyan 67%, blue 84%, magenta 100%);
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -26,15 +26,16 @@ form button {
     font-size: 2rem;
     border: none;
     background: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 form button {
-    color: #ff6f47;
+    color: #00ff16;
     background: #f7fffe;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 form button:hover {
-    background: #ff6f47;
+    background: #00ff0a;
     color: white;
 }
 .todo-container {
@@ -49,7 +50,7 @@ form button:hover {
 }
 
 .todo {
-    margin: 4rem;
+    margin: 1rem;
     background: white;
     font-size: 1.5rem;
     color: black;
@@ -57,6 +58,7 @@ form button:hover {
     justify-content: flex-end;
     align-items: center;
     transition: all 1s ease;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .filter-todo {
     padding: 1rem;
@@ -67,7 +69,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-    background: #ff6f47;
+    background: linear-gradient(120deg, magenta 0%, orange 100%);
     color: white;
     border: none;
     padding: 1rem;
@@ -75,10 +77,14 @@ form button:hover {
     font-size: 1rem;
 }
 .complete-btn {
-    background: rgb(11, 212, 162);
+    background: linear-gradient(120deg, cyan 0%, lime 100%);
 }
 .todo-item {
-    padding: 0rem 0.5rem;
+    padding: 0rem 1.5rem;
+    border-color: white;
+    background-color: white;
+    border-style: none;
+    font-size: 2rem;
 }
 
 .fa-trash,
@@ -106,6 +112,7 @@ select {
     box-shadow: none;
     border: 0 !important;
     background-image: none;
+
 }
 
 /* Custom Select */
@@ -113,9 +120,10 @@ select {
     margin: 1rem;
     position: relative;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 select {
-    color: #ff6f47;
+    color: #85ff07;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     width: 12rem;
@@ -127,7 +135,7 @@ select {
     top: 0;
     right: 0;
     padding: 1rem;
-    background: #ff6f47;
+    background: #00ffc0;
     cursor: pointer;
     pointer-events: none;
 }

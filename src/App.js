@@ -10,8 +10,17 @@ import TodoList from './components/TodoList';
 
 function App() {
 
-  const [inputText, setInputText] = useState('');
-  const [todos, setTodos] = useState([]);
+  // var myname = "Sam"
+  // when myname changes, the UI does not re-render
+  // When a STATE variable changes, the UI RE-RENDERS
+  // Cannot set state variable using equal SIGN. MUST use setter.
+
+  const [inputText, setInputText] = useState(''); // initializes inputText to empty string
+  // to change inputText, setInputText("newthing");
+  const [todos, setTodos] = useState([]); // initializes todos to an empty list or array
+  // typical array ["Sam", "Dan", "Kelly"]
+  // [{name: "Sam", title: "CEO"}, {name: "Kelly", title: "VP"}, {}
+  //
 
   return (
     <div className="App">
