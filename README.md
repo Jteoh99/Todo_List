@@ -1,6 +1,6 @@
-## Instructions
+# Instructions
 
-# Git Instructions
+## Git Instructions
 git pull origin develop
 Make code changes
 Then save the changes to git local repo
@@ -9,7 +9,7 @@ git push origin develop // will put changes into remote repository
 
 git status // reports what has changed in your local repository
 
-# How to run the app
+## How to run the app
 Make a new folder and cd into the folder
 mkdir mytest
 cd mytest
