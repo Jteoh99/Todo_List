@@ -49,12 +49,12 @@ form button:hover {
 }
 
 .todo {
-    margin: 0.5rem;
+    margin: 4rem;
     background: white;
     font-size: 1.5rem;
     color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     transition: all 1s ease;
 }
